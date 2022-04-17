@@ -6,10 +6,6 @@ from flask import render_template, request, redirect
 
 app = Flask(__name__)
 
-# import config file with MySQL Host, User, Password and Database
-app.config.from_pyfile(os.path.join(".", "app.conf"), silent=False)
-mysql = MySQL(app)
-
 # serve index page
 @app.route("/")
 def index():

@@ -34,4 +34,12 @@ body {
 .bg-danger{
   background-color: #c11724 !important;
 }
- 
+
+.container {
+  max-width: 54%;
+}
+
+hr {
+  border-top: 4px solid #c11724 !important;
+  opacity: 1;
+}

@@ -10,7 +10,7 @@
 </head>
  
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #c11724;">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #c11724;">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='fire-logo-cutout.png') }}" alt="" width="30" height="30" class="d-inline-block align-text-top"> F.I.R.E. Consultancy</a>
 
@@ -21,13 +21,31 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/aerial-surveys">Aerial Surveys</a></li>
+                      <li><a class="dropdown-item" href="/expert-witness">Expert Witness</a></li>
+                      <li><a class="dropdown-item" href="/external-wall">External Wall Analysis</a></li>
+                      <li><a class="dropdown-item" href="/fire-engineering">Fire Engineering</a></li>
+                      <li><a class="dropdown-item" href="/fire-safety-assessments">Fire Safety Assessments</a></li>
+                    </ul>
+                  </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/casestudies">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/book">Book a Meeting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ask">Ask the Experts</a>
                 </li>
             </ul>
 
@@ -48,7 +66,7 @@
 
 <footer class="footer">
     <div class="container text-center">
-        <span class="text-muted"><p>&copy;{{ now.year }} | <a href="https://fireconsultancy.co.uk" title="Developed by F.I.R.E. Consultancy">Developed by F.I.R.E. Consultancy</a> | Registered in England and Wales: 9291637</p></span>
+        <span class="text-muted"><p>&copy;{{ now.year }} | Fire Investigation Risk Evaluation Consultancy Ltd. | Registered in England and Wales: 9291637</p></span>
     </div>
 </footer>
 

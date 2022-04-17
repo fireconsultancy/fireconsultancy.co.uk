@@ -2,12 +2,107 @@
 
 {% block content %}
 
-<div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">F.I.R.E Consultancy</h1>
-      <p class="col-md-8 fs-4">Welcome to F.I.R.E. Consultancy's website.</p>
+<video autoplay muted loop width="100%" data-video-width="400"  src="https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/Fire+Consultancy+Website+Render.mp4"></video>
+
+<div class="p-5 mb-4 bg-danger">
+    <div class="container py-5">
+      <h1 class="display-7 text-center text-white">Providing <b>Fire Investigation and Risk Evaluation</b> worldwide by an independent team of highly qualified experts</h1>
     </div>
 </div>
 
+<div class="p-1">
+  <div class="container py-3">
+      <div class="row align-items-center mb-3">
+        <div class="col text-center">
+          <a href="/">
+            <img class="img-fluid" width="200" src="{{ url_for('static', filename='fire-logo-cutout.png') }}" alt="F.I.R.E. Consultancy Logo">
+          </a>
+        </div>
+        <div class="col text-center">
+          <a href="https://fredtalklive.com" target="_blank" rel="noopener noreferrer">
+            <img class="img-fluid" width="280" src="{{ url_for('static', filename='fred-logo.png') }}" alt="FRED Talk Live Logo">
+          </a>
+        </div>
+        <div class="col text-center">
+          <a href="https://firesafetyscheme.uk" target="_blank" rel="noopener noreferrer">
+            <img class="img-fluid" width="200" src="{{ url_for('static', filename='fire-safety-scheme-logo.png') }}" alt="Fire Safety Scheme Logo">
+          </a>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col text-center">
+          <p><b>Fire Investigation Risk Evaluation</b><br>
+          <i>Consultancy Services</i></p>
+        </div>
+        <div class="col text-center">
+          <p><b>Fire Related Educational Development</b><br>
+          <i>CPD Platform</i></p>
+        </div>
+        <div class="col text-center">
+          <p><b>Fire Safety Scheme</b><br>
+          <i>Building Safety App</i></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="container p-2">
+  <hr class="mb-5"/>
+  <div class="row mb-5">
+    <div class="col">
+      <h1>Aerial Surveys</h1>
+      <p>F.I.R.E. Consultancy are developing patent pending through-wall scanning technology that will allow us to conduct external wall inspections in a safe and non-destructive manner. We also offer 3D LIDAR scanning and thermographic surveys, flown by our team of CAA licensed UAV operators.</p>
+      <a href="/aerial-surveys" class="btn btn-danger">Find Out More</a>
+    </div>
+    <div class="col-8">
+      <img class="w-100" src="https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/aerial-survey.png">
+    </div>
+  </div>
+  <hr class="mb-5"/>
+  <div class="row mb-5">
+    <div class="col-8">
+      <img class="w-100" src="https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/expert-witness.png">
+    </div>
+    <div class="col">
+      <h1>Expert Witness</h1>
+      <p>F.I.R.E. Consultancy offers expert witnesses who can provide expert testimony all aspects of Fire Engineering. Our specialisms include building design; performance of materials; installation of systems and compliance; review of site management plans and risk assessments.</p>
+      <a href="/expert-witness" class="btn btn-danger">Find Out More</a>
+    </div>
+  </div>
+  <hr class="mb-5"/>
+  <div class="row mb-5">
+    <div class="col">
+      <h1>External Wall Analysis</h1>
+      <p>F.I.R.E. Consultancy specialises in assessing and inspecting external wall systems. Our team implements industry-leading practice to remediate dangerous or inadequate external wall systems, bringing your buildings to the modern standard of fire safety.</p>
+      <a href="/external-wall" class="btn btn-danger">Find Out More</a>
+    </div>
+    <div class="col-8">
+      <img class="w-100" src="https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/external-wall-analysis.png">
+    </div>
+  </div>
+  <hr class="mb-5"/>
+  <div class="row mb-5">
+    <div class="col-8">
+      <img class="w-100" src="https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/placeholder.png">
+    </div>
+    <div class="col">
+      <h1>Fire Engineering</h1>
+      <p>F.I.R.E. Consultancy are experienced at providing an understanding of the circumstances leading up to a fire occurrence. We carry out risk reduction surveys and can create tailored fire strategies for your building.</p>
+      <a href="/fire-engineering" class="btn btn-danger">Find Out More</a>
+    </div>
+  </div>
+  <hr class="mb-5"/>
+  <div class="row mb-5">
+    <div class="col">
+      <h1>Fire Safety Assessments</h1>
+      <p>F.I.R.E. Consultancy are proficient in carrying out due diligence site surveys, identifying areas which later might require capital expenditure to bring the fire safety measures up to code compliance. We also have experience working with dangerous substances and explosive atmospheres (DSEAR) and can provide services in this area.</p>
+      <a href="/fire-safety-assessments" class="btn btn-danger">Find Out More</a>
+    </div>
+    <div class="col-8">
+      <img class="w-100" src="https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/fire-safety-assessments.png">
+    </div>
+  </div>
+</div>
 
 {% endblock %}
