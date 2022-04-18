@@ -1,7 +1,7 @@
 {
     "theme_color": "#c11723",
     "background_color": "#ffffff",
-    "display": "minimal-ui",
+    "display": "standalone",
     "scope": "/",
     "start_url": "/",
     "name": "F.I.R.E. Consultancy",
