@@ -2,7 +2,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 240px; /* Set the fixed height of the footer here */
+    height: 350px; /* Set the fixed height of the footer here */
   }
 
 .footer-colour{
@@ -46,7 +46,7 @@ hr {
 
 body { 
   padding-top: 57px; 
-  padding-bottom: 260px; 
+  padding-bottom: 350px; 
 }
 
 .iframe-wrapper{
