@@ -41,10 +41,13 @@ if (workbox) {
   workbox.routing.registerRoute(
     new RegExp('^https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/large/.*'),
     workbox.strategies.cacheFirst({
-      cacheName: 'cdn-cache',
-      cacheableResponse: {
-        statuses: [0, 200], // Make sure 0 is included in this list.
-      }
+      cacheName: 'cdn',
+      plugins: [
+        new workbox.expiration.Plugin({
+          maxEntries: 60,
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+        })
+      ],
     })
   );
 
