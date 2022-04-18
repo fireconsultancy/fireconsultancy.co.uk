@@ -1,3 +1,14 @@
+#topheader .nav-link {
+  color: white !important;
+  }
+
+#topheader .nav-item.active .nav-link,
+#topheader .nav-item .nav-link:active,
+#topheader .nav-item .nav-link:focus,
+#topheader .nav-item:hover .nav-link {
+    color: #e0e0e0 !important;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
