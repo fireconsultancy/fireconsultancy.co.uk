@@ -39,16 +39,16 @@ if (workbox) {
   );
 
   workbox.routing.registerRoute(
-    new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
+    new RegExp('^https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/large/.*'),
     workbox.strategies.cacheFirst({
-      cacheName: 'googleapis',
-      plugins: [
-        new workbox.expiration.Plugin({
-          maxEntries: 30,
-        }),
-      ],
-    }),
+      cacheName: 'cdn-cache',
+      cacheableResponse: {
+        statuses: [0, 200], // Make sure 0 is included in this list.
+      }
+    })
   );
+
+  
 } else {
   console.log("Boo! Workbox didn't load 😬");
 }
