@@ -6,10 +6,16 @@ if (workbox) {
   console.log("Yay! Workbox is loaded 🎉");
 
   workbox.precaching.precacheAndRoute([
-    {
-      "url": "/",
-      "revision": "1"
-    }
+    {"url": "/", "revision": "1"},
+    {"url": "/about", "revision": "1"},
+    {"url": "/aerial-surveys", "revision": "1"},
+    {"url": "/expert-witness", "revision": "1"},
+    {"url": "/external-wall", "revision": "1"},
+    {"url": "/fire-engineering", "revision": "1"},
+    {"url": "/fire-safety-assessments", "revision": "1"},
+    {"url": "/case-studies", "revision": "1"},
+    {"url": "/ask", "revision": "1"},
+    {"url": "/contact", "revision": "1"},
   ]);
 
   workbox.routing.registerRoute(
@@ -20,7 +26,7 @@ if (workbox) {
   );
 
   workbox.routing.registerRoute(
-    /\.(?:png|gif|jpg|jpeg|svg)$/,
+    /\.(?:webp|png|gif|jpg|jpeg|svg)$/,
     workbox.strategies.cacheFirst({
       cacheName: 'images',
       plugins: [
