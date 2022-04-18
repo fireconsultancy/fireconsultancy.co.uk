@@ -2,21 +2,13 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #ececec;
-
+    height: 240px; /* Set the fixed height of the footer here */
   }
 
-.footer a {
-    color: black;
+.footer-colour{
+  background-color: #e0e0e0;
 }
 
-
-.footer p {
-    color: black;
-}
-  
 html {
   position: relative;
   min-height: 100%;
@@ -36,10 +28,27 @@ body {
 }
 
 .container {
-  max-width: 54%;
+  max-width: 1240px;
 }
 
 hr {
   border-top: 4px solid #c11724 !important;
   opacity: 1;
+}
+
+.pill-colour {
+  color: black !important;
+}
+
+.pill-colour .active{
+  background-color: #c11724  !important;
+}
+
+body { 
+  padding-top: 57px; 
+  padding-bottom: 260px; 
+}
+
+.iframe-wrapper{
+  background:url(https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/spinner.svg) center center no-repeat;
 }
