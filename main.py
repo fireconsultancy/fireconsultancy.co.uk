@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 from flask import Flask
-from flask import render_template, request, redirect
+from flask import render_template, request, send_from_directory
 
 import boto3
 
@@ -108,6 +108,10 @@ def fire_safety_assessments():
 @app.route("/favicon.ico")
 def favicon():
     return "200"
+
+@app.route('/<path:path>')
+def send_png(path):
+    return send_from_directory('./static', path)
     
 @app.context_processor
 def inject_now():
