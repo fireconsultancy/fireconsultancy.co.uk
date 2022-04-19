@@ -9,6 +9,9 @@
     color: #e0e0e0 !important;
 }
 
+.dropdown-item:active{
+  background-color: #c11724}
+
 .footer {
     position: absolute;
     bottom: 0;
