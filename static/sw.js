@@ -6,16 +6,16 @@ if (workbox) {
   console.log("Yay! Workbox is loaded 🎉");
 
   workbox.precaching.precacheAndRoute([
-    {"url": "/", "revision": "1"},
-    {"url": "/about", "revision": "1"},
-    {"url": "/aerial-surveys", "revision": "1"},
-    {"url": "/expert-witness", "revision": "1"},
-    {"url": "/external-wall", "revision": "1"},
-    {"url": "/fire-engineering", "revision": "1"},
-    {"url": "/fire-safety-assessments", "revision": "1"},
-    {"url": "/case-studies", "revision": "1"},
-    {"url": "/ask", "revision": "1"},
-    {"url": "/contact", "revision": "1"},
+    {"url": "/", "revision": "3"},
+    {"url": "/about", "revision": "3"},
+    {"url": "/aerial-surveys", "revision": "3"},
+    {"url": "/expert-witness", "revision": "3"},
+    {"url": "/external-wall", "revision": "3"},
+    {"url": "/fire-engineering", "revision": "3"},
+    {"url": "/fire-safety-assessments", "revision": "3"},
+    {"url": "/case-studies", "revision": "3"},
+    {"url": "/ask", "revision": "3"},
+    {"url": "/contact", "revision": "3"},
   ]);
 
   workbox.routing.registerRoute(
