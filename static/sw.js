@@ -39,7 +39,7 @@ if (workbox) {
   );
 
   workbox.routing.registerRoute(
-    new RegExp('^https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/large/.*'),
+    new RegExp('^https://fireconsultancy-wordpress-assets.s3.eu-west-2.amazonaws.com/.*'),
     workbox.strategies.cacheFirst({
       cacheName: 'cdn',
       plugins: [
