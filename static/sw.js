@@ -46,6 +46,9 @@ if (workbox) {
         new workbox.expiration.Plugin({
           maxEntries: 60,
           maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+        }),
+        new workbox.cacheableResponse.Plugin({
+          statuses: [0, 200]
         })
       ],
     })
