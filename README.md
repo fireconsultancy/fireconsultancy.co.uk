@@ -1,8 +1,6 @@
-# inspections
-web app to display the data from inspections (such as fire door survey)
+# fireconsultancy.co.uk
+basic PWA business website with contact form
 
 # requirements
 * python 3
 * python-flask
-* flask-bootstrap
-* flask-mysqldb
